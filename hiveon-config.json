@@ -1,0 +1,27 @@
+{
+  "wallet_address": "0x8AF9F8d7f71f0625794544DC3aaF36d2c75b60F0",
+  "pool_settings": {
+    "pool_url": "eth-us-east1.nanopool.org:9999",
+    "pool_backup": "eth-us-west1.nanopool.org:9999",
+    "worker_name": "braiins-worker"
+  },
+  "mining_preferences": {
+    "algorithm": "ethash",
+    "intensity": "auto",
+    "temperature_limit": 85,
+    "power_limit": 80,
+    "fan_speed": "auto"
+  },
+  "reporting": {
+    "stats_interval": 30,
+    "log_level": "info",
+    "enable_api": true,
+    "api_port": 4028
+  },
+  "overclock": {
+    "memory_clock": 0,
+    "core_clock": 0,
+    "power_target": 100,
+    "auto_tune": true
+  }
+}
