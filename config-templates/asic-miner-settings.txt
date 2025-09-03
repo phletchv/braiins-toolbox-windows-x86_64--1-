@@ -1,0 +1,42 @@
+# ASIC Miner Configuration Template for Braiins Pool
+# Use these settings in your ASIC miner's web interface
+
+[Pool Configuration]
+Pool 1 URL: stratum+tcp://stratum.braiins.com:3333
+Pool 1 Worker: your_username.worker_name
+Pool 1 Password: x
+
+Pool 2 URL: stratum+tcp://stratum.braiins.com:3336
+Pool 2 Worker: your_username.worker_name
+Pool 2 Password: x
+
+Pool 3 URL: stratum+ssl://stratum.braiins.com:3334
+Pool 3 Worker: your_username.worker_name
+Pool 3 Password: x
+
+[Advanced Settings]
+# Recommended settings for optimal performance
+Failover-Only: false
+Stratum Protocol: true
+Get Work Timeout: 60
+Stratum Timeout: 120
+
+[Network Settings]
+# Make sure these ports are open in your firewall
+Required Outbound Ports: 3333, 3336, 3334, 3335
+DNS Server: 8.8.8.8 (or your ISP's DNS)
+
+[Worker Naming Convention]
+# Use descriptive worker names for easy identification
+Format: username.descriptive_name
+Examples:
+- john_doe.antminer_s19_garage
+- john_doe.whatsminer_m30s_basement
+- john_doe.rig1_living_room
+
+[Monitoring]
+# Enable these features in your ASIC interface
+API Access: Enabled
+Remote Monitoring: Enabled
+Email Notifications: Enabled
+Temperature Alerts: Enabled

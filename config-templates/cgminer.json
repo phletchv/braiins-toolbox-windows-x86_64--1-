@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "url": "stratum+tcp://stratum.braiins.com:3333",
+      "user": "your_username.worker_name",
+      "pass": "x"
+    },
+    {
+      "url": "stratum+tcp://stratum.braiins.com:3336",
+      "user": "your_username.worker_name",
+      "pass": "x"
+    },
+    {
+      "url": "stratum+ssl://stratum.braiins.com:3334",
+      "user": "your_username.worker_name",
+      "pass": "x"
+    }
+  ],
+  "api-listen": true,
+  "api-allow": "127.0.0.1",
+  "api-port": 4028,
+  "expiry": 120,
+  "gpu-dyninterval": 7,
+  "log": 5,
+  "queue": 1,
+  "scan-time": 60,
+  "temp-hysteresis": 3,
+  "shares": 0,
+  "kernel-path": "/usr/local/bin"
+}
