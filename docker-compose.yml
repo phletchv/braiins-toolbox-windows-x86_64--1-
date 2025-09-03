@@ -1,0 +1,9 @@
+services:
+  mywebapp:
+    image: nginx
+    container_name: mywebapp
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
