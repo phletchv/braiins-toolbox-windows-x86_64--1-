@@ -26,15 +26,88 @@
             color: #28a745;
             font-weight: bold;
         }
+        .hiveon-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+            margin: 20px 0;
+        }
+        .hiveon-status {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .features ul {
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .features li {
+            margin: 8px 0;
+        }
+        .commands {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        .command-list {
+            font-family: 'Courier New', monospace;
+            background-color: #343a40;
+            color: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: left;
+            margin-top: 10px;
+        }
+        code {
+            background-color: #495057;
+            color: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🚀 Braiins Toolbox</h1>
-        <h2>My Web App</h2>
+        <h2>Mining Management Platform</h2>
         <p class="status">✅ Nginx container is running successfully!</p>
-        <p>This is a simple web application running in a Docker container using nginx.</p>
+        <p>This is a mining management web application with Hiveon OS connectivity.</p>
+        
         <hr>
+        
+        <h3>🔗 Hiveon OS Integration</h3>
+        <div class="hiveon-section">
+            <p><strong>Status:</strong> <span class="hiveon-status">Configuration Ready</span></p>
+            <p><strong>Configuration File:</strong> hiveon-config.json</p>
+            <p><strong>Connection Script:</strong> connect-hiveon.sh / connect-hiveon.bat</p>
+            
+            <div class="features">
+                <h4>Available Features:</h4>
+                <ul>
+                    <li>✅ Pool Configuration Management</li>
+                    <li>✅ API Connectivity Testing</li>
+                    <li>✅ Miner Configuration Generation</li>
+                    <li>✅ Connection Monitoring</li>
+                    <li>✅ Cross-platform Scripts (Linux/Windows)</li>
+                </ul>
+            </div>
+            
+            <div class="commands">
+                <h4>Quick Commands:</h4>
+                <div class="command-list">
+                    <code>./connect-hiveon.sh config</code> - Show configuration<br>
+                    <code>./connect-hiveon.sh test</code> - Test all connections<br>
+                    <code>./connect-hiveon.sh generate</code> - Generate miner config<br>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <h3>🐳 Container Information</h3>
         <p><strong>Container Name:</strong> mywebapp</p>
         <p><strong>Restart Policy:</strong> always</p>
         <p><strong>Mode:</strong> detached</p>

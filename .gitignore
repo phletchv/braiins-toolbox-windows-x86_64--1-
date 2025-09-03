@@ -22,3 +22,7 @@ logs/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Generated Hiveon OS files
+miner-config-hiveon.conf
+hiveon-connection.log

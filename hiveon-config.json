@@ -1,0 +1,79 @@
+{
+  "hiveon_os": {
+    "name": "Hiveon OS Connection Configuration",
+    "version": "1.0.0",
+    "description": "Configuration file for connecting to Hiveon OS miners and pools"
+  },
+  "pools": [
+    {
+      "name": "Hiveon Pool",
+      "url": "stratum+tcp://eth-us-east1.hiveon.net:4444",
+      "user": "YOUR_WALLET_ADDRESS.WORKER_NAME",
+      "password": "x",
+      "algorithm": "ethash",
+      "enabled": true
+    },
+    {
+      "name": "Hiveon Pool SSL",
+      "url": "stratum+ssl://eth-us-east1.hiveon.net:24443",
+      "user": "YOUR_WALLET_ADDRESS.WORKER_NAME", 
+      "password": "x",
+      "algorithm": "ethash",
+      "enabled": false
+    }
+  ],
+  "api": {
+    "hiveon_api_url": "https://hiveon.net/api/v1",
+    "endpoints": {
+      "workers": "/workers",
+      "stats": "/stats", 
+      "payouts": "/payouts"
+    },
+    "timeout": 30,
+    "retry_attempts": 3
+  },
+  "miner_config": {
+    "default_worker_name": "worker01",
+    "power_limit": 80,
+    "temperature_limit": 85,
+    "fan_speed": "auto",
+    "overclock": {
+      "enabled": false,
+      "core_clock": 0,
+      "memory_clock": 0,
+      "power_limit": 100
+    }
+  },
+  "monitoring": {
+    "enabled": true,
+    "check_interval": 300,
+    "alert_thresholds": {
+      "temperature": 80,
+      "hashrate_drop_percentage": 20,
+      "worker_offline_minutes": 10
+    },
+    "notifications": {
+      "email": {
+        "enabled": false,
+        "smtp_server": "",
+        "smtp_port": 587,
+        "username": "",
+        "password": "",
+        "to_address": ""
+      },
+      "webhook": {
+        "enabled": false,
+        "url": "",
+        "method": "POST"
+      }
+    }
+  },
+  "security": {
+    "ssl_verify": true,
+    "api_key": "",
+    "rate_limit": {
+      "requests_per_minute": 60,
+      "burst_limit": 10
+    }
+  }
+}
