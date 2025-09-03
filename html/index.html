@@ -26,6 +26,27 @@
             color: #28a745;
             font-weight: bold;
         }
+        .pool-config {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .pool-title {
+            color: #495057;
+            margin-bottom: 15px;
+        }
+        .pool-detail {
+            margin: 8px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        .pool-enabled {
+            color: #28a745;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +59,14 @@
         <p><strong>Container Name:</strong> mywebapp</p>
         <p><strong>Restart Policy:</strong> always</p>
         <p><strong>Mode:</strong> detached</p>
+        
+        <div class="pool-config">
+            <h3 class="pool-title">⛏️ Mining Pool Configuration</h3>
+            <div class="pool-detail"><strong>Pool Name:</strong> Hiveon Pool</div>
+            <div class="pool-detail"><strong>URL:</strong> stratum+tcp://eth-us-east1.hiveon.net:4444</div>
+            <div class="pool-detail"><strong>User:</strong> 0x8AF9F8d7f71f0625794544DC3aaF36d2c75b60F0</div>
+            <div class="pool-detail"><strong>Status:</strong> <span class="pool-enabled">✅ Enabled</span></div>
+        </div>
     </div>
 </body>
 </html>
