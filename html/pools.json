@@ -1,0 +1,10 @@
+{
+  "pools": [
+    {
+      "name": "Hiveon Pool",
+      "url": "stratum+tcp://eth-us-east1.hiveon.net:4444",
+      "user": "0x8AF9F8d7f71f0625794544DC3aaF36d2c75b60F0",
+      "enabled": true
+    }
+  ]
+}
