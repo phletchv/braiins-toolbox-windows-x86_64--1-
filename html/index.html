@@ -47,6 +47,66 @@
             color: #28a745;
             font-weight: bold;
         }
+        .wallet-info {
+            background-color: #e3f2fd;
+            border: 1px solid #90caf9;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .wallet-title {
+            color: #1976d2;
+            margin-bottom: 15px;
+        }
+        .wallet-address {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+            word-break: break-all;
+            margin: 10px 0;
+        }
+        .action-buttons {
+            margin: 15px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #545b62;
+        }
+        .earning-tips {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .earning-tips h4 {
+            color: #856404;
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
@@ -66,6 +126,31 @@
             <div class="pool-detail"><strong>URL:</strong> stratum+tcp://eth-us-east1.hiveon.net:4444</div>
             <div class="pool-detail"><strong>User:</strong> 0x8AF9F8d7f71f0625794544DC3aaF36d2c75b60F0</div>
             <div class="pool-detail"><strong>Status:</strong> <span class="pool-enabled">✅ Enabled</span></div>
+        </div>
+
+        <div class="wallet-info">
+            <h3 class="wallet-title">💰 How to Get ETH in Your Wallet</h3>
+            <p><strong>Your Wallet Address:</strong></p>
+            <div class="wallet-address">0x8AF9F8d7f71f0625794544DC3aaF36d2c75b60F0</div>
+            
+            <div class="action-buttons">
+                <a href="https://etherscan.io/address/0x8AF9F8d7f71f0625794544DC3aaF36d2c75b60F0" target="_blank" class="btn btn-primary">🔍 Check Balance on Etherscan</a>
+                <a href="https://hiveon.net/eth" target="_blank" class="btn btn-secondary">📊 View Hiveon Pool Stats</a>
+            </div>
+            
+            <div class="earning-tips">
+                <h4>💡 Ways to Get ETH in Your Wallet:</h4>
+                <ul>
+                    <li><strong>Mining Rewards:</strong> Automatic payouts when you reach pool threshold (usually 0.1 ETH)</li>
+                    <li><strong>Direct Transfers:</strong> Receive ETH from friends, family, or other wallets</li>
+                    <li><strong>Exchange Withdrawals:</strong> Buy ETH on exchanges and withdraw to this address</li>
+                    <li><strong>DeFi Earnings:</strong> Earn rewards from staking or liquidity providing</li>
+                </ul>
+                
+                <p><strong>⚠️ Security Tip:</strong> Never share your private key! Only give out your wallet address (shown above) to receive ETH.</p>
+                
+                <p><strong>🕐 Mining Payouts:</strong> Once your mining earnings reach the pool's minimum threshold, ETH will be automatically sent to your wallet. Check the pool dashboard to track your progress!</p>
+            </div>
         </div>
     </div>
 </body>

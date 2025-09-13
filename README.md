@@ -80,6 +80,25 @@ Once running, the nginx server will be accessible at:
 - `run-nginx.bat` - Windows batch script  
 - `docker-compose.yml` - Docker Compose configuration
 - `html/index.html` - Sample web page (used with Docker Compose)
+- `WALLET_GUIDE.md` - Comprehensive guide on how to receive ETH in your wallet
+- `hiveon-config.json` - Mining configuration for Hiveon pools
+- `pools.json` - Pool configuration for mining
+
+## Wallet Information
+
+This toolbox is configured with wallet address: `0x8AF9F8d7f71f0625794544DC3aaF36d2c75b60F0`
+
+**Need help getting ETH in your wallet?** See the detailed [Wallet Guide](WALLET_GUIDE.md) for:
+- How mining payouts work
+- Different ways to receive ETH
+- Security best practices
+- Troubleshooting tips
+- Pool dashboard links
+
+### Quick Links
+- [Check wallet balance on Etherscan](https://etherscan.io/address/0x8AF9F8d7f71f0625794544DC3aaF36d2c75b60F0)
+- [View Hiveon pool statistics](https://hiveon.net/eth)
+- [Read the complete Wallet Guide](WALLET_GUIDE.md)
 
 ## Troubleshooting
 
